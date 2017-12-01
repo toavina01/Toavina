@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css.min">
+	<link rel="shortcut icon" type="img/x-icon" href="assets/img/4.jpg">
+</head>
+<body>
+	<header class="container-fluide header" style="z-index: 20;">
+		<div class="container">
+			<a href="#" class="logo" style="font-size: 30px; color: black;"> Mon portfolio </a>
+		</div>
+		<nav class="menu">
+			<a href="#">Acceuil</a>
+			<a href="index.html#apropos">A propos</a>
+			<a href="index.html#portfolio">Experience</a>
+			<a href="index.html#contact">Contacts</a>
+		</nav>
+	</header>
+
+
+
+	<section class="container-fluide banner">
+		<div class="ban">
+				<img src="assets/img/ban.jpg" alt="banniere du site" style="border-radius: 150px; height: 500px;">
+		</div>
+		<div class="inner-banner">
+			<h1>Bienvenu sur mon Portfolio</h1>
+			<button class="btn3 btn-custom"><a href="pages/index.html"> Contactez Moi !</a></button>
+		</div>
+	</section>
+
+	<section class="container-fluide apropos" style="background-color: blue;">
+		<div class="container">
+			<div class="row">
+			<h2 id="apropos" style="font-size: 40px;">A propos de moi</h2><hr style="background-color: blue; width: 300px; height: 3px;">
+			<hr class="separator">
+			
+			<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12" style="float: left; width: 50%; height: 200px; background-color: #000; color: #fff;">
+				<center><img src="assets/img/capture.png" style="height: 70px; border-radius: 70px;"></center><h2>Etudes</h2><hr style="width: 100px; height: 3px; background-color: white;">
+				<center><p>J'étudie à l'enseignement supérieur en informatique et électronique "AKAMASOA".<br> Je suis formé depuis 1 an et passe déjà au niveau supérieur.</p></center>
+			</article>
+			<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12"  style="float: left; width: 50%; height: 200px; background-color: #000; color: #fff;">
+				<center><img src="assets/img/capture.png" style="height: 70px; border-radius: 70px;"></center><h2>Projets </h2><hr style="width: 100px; height: 3px; background-color: white;">
+				<center><p>J'ai vraiment fait quelques pages et j'ai déjà fait beaucoup de jouets et de calculatrices</p></center>
+			</article>
+			</div>
+		</div>		
+	</section>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+	<section class="container-fluide portfolio" style="background-color: #3498db ;">
+		<div class="container">
+			<h2 id="portfolio">MON EXPERIENCE</h2><hr style="background-color: #000; width: 300px; height: 3px;">
+			<hr class="separator">
+			<script type="text/javascript">
+            function dis(x){
+                if (x==1 || x==2 || x==3 || x==4 || x==5 || x==6 || x==7 || x==7 || x==8 || x==9 || x==0 || x=='(' || x==')'){
+                frm.txt.value=frm.txt.value+x;}
+                else{
+                    if(frm.txt.value.charAt(frm.txt.value.length-1)==x){}
+                    else{
+                        if(frm.txt.value.charAt(frm.txt.value.length-1)=='/' ||frm.txt.value.charAt(frm.txt.value.length-1)=='*' ||frm.txt.value.charAt(frm.txt.value.length-1)=='+' ||frm.txt.value.charAt(frm.txt.value.length-1)=='-' ||frm.txt.value.charAt(frm.txt.value.length-1)=='.'){
+                            frm.txt.value=frm.txt.value.slice(0,frm.txt.value.length-1);
+                        }
+                        frm.txt.value=frm.txt.value+x;
+                    }
+                }
+            }
+            function ce(){
+                frm.txt.value='';
+            }
+            function bs(){
+                frm.txt.value=frm.txt.value.slice(0,frm.txt.value.length-1);
+            }
+        </script>
+    </head>
+    <body>
+    	<center>
+        <div id="container">
+            <form name="frm">
+                <input id="textbox" type="textbox" name="txt"><br>
+                <input class="btn" id="" type="button" value="(" onClick="dis(this.value)">
+                <input class="btn" id="" type="button" value=")" onClick="dis(this.value)">
+                <input class="btnc" id="" type="button" value="CE" onclick="ce(this.value)">
+                <input class="btnc" id="" type="button" value="BackSpace" onclick="bs(this.value)"><br>
+                <input class="btn" type="button" value="7" onClick="dis(this.value)">
+                <input class="btn" type="button" value="8" onClick="dis(this.value)">
+                <input class="btn" type="button" value="9" onClick="dis(this.value)">
+                <input class="btno" type="button" value="/" onClick="dis(this.value)"><br>
+                <input class="btn" type="button" value="4" onClick="dis(this.value)">
+                <input class="btn" type="button" value="5" onClick="dis(this.value)">
+                <input class="btn" type="button" value="6" onClick="dis(this.value)">
+                <input class="btno" type="button" value="*" onClick="dis(this.value)"><br>
+                <input class="btn" type="button" value="1" onClick="dis(this.value)">
+                <input class="btn" type="button" value="2" onClick="dis(this.value)">
+                <input class="btn" type="button" value="3" onClick="dis(this.value)">
+                <input class="btno" type="button" value="+" onClick="dis(this.value)"><br>
+                <input class="btn" type="button" value="." onClick="dis(this.value)">
+                <input class="btn" type="button" value="0" onClick="dis(this.value)">
+                <input class="btn" type="button" value="=" onClick="txt.value=eval(txt.value)">
+                <input class="btno" type="button" value="-" onClick="dis(this.value)">
+            </form>
+        </div>
+		</div>
+	</center>
+	</section>
+
+
+<br><br><br><br><br><br><br><br><br>
+
+	<footer class="container-fluide contact" style="background-color: #2C3E50;">
+		<div class="container">
+			<div class="row">
+				<center><h2 id="contact" style="font-size: 40px; color: #fff;">Contactez-moi !</h2></center>
+				<hr class="separator" style="height:3%; width:5%;box-shadow: none;border:none;background-color: #3498db;">
+				<div class="span6">
+					<form class="formulairecontact">
+						<div class="controls controls-row">
+							<input id="name" type="text" name="name" class="span3" placeholder="name"><br>
+							<input id="email" type="text" name="email" class="span3" placeholder="email Adresse">
+						</div>
+						<div class="controls">
+							<textarea id="message" name="message" class="span6" placeholder="your message" rows="5"></textarea>
+						</div>
+						<div class="controls">
+							<button id="contact-submit" type="submit" class="btn2 btn-primary input-medium pull-right"> Send </button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
